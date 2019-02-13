@@ -51,7 +51,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 - **Frank Förster** - *Initial work* - [greatfireball](https://github.com/greatfireball)
 
-See also the list of [contributors](https://github.com/greatfireball/ime_seqfilter/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/greatfireball/ime_jellyfish/contributors) who participated in this project.
 
 ## License
 
