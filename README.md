@@ -22,11 +22,13 @@ Just provide all required parameters via command line.
 Default working directory is `/data`.
 Therefore, input data should be mounted using `/data` volume.
 
-Running the command to get the information for a local file `localfile` in the current folder:
+Running the command to count kmers for a local file `reads.fasta` in the current folder:
 
 ```
-docker run --rm -v $PWD:/data greatfireball/ime_jellyfish localfile
+docker run --user $(id -u):$(id -g) --rm -v $PWD:/data greatfireball/ime_jellyfish count -m 21 -s 100M -t 10 -C reads.fasta
 ```
+Quoting from the [Wiki](https://github.com/gmarcais/Jellyfish/tree/master/doc#counting-all-k-mers):
+> "This will count canonical (-C) 21-mers (-m 21), using a hash with 100 million elements (-s 100M) and 10 threads (-t 10) in the sequences in the file reads.fasta. The output is written in the file mer counts.jf by default (change with -o switch)."
 
 ## Releases
 
