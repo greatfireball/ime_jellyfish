@@ -18,7 +18,7 @@ WORKDIR /opt
 
 RUN apt update && \
     apt install --yes \
-	wget &&
+	wget && \
     mkdir jellyfish && cd jellyfish && \
     wget -O jellyfish https://github.com/gmarcais/Jellyfish/releases/download/v2.2.10/jellyfish-linux && \
     chmod +x jellyfish && \
