@@ -20,7 +20,7 @@ RUN apt update && \
     apt install --yes \
 	wget && \
     mkdir jellyfish && cd jellyfish && \
-    wget -O jellyfish https://github.com/gmarcais/Jellyfish/releases/download/v2.2.10/jellyfish-linux && \
+    wget -O jellyfish https://github.com/gmarcais/Jellyfish/releases/download/v1.1.12/jellyfish-linux && \
     chmod +x jellyfish && \
     apt remove --yes \
 	wget && \
